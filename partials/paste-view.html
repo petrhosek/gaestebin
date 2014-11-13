@@ -1,0 +1,25 @@
+<div>
+  <section horizontal center-justified layout>
+    <div flex>
+      <div ng-hide="true">
+        <h4>Paste URL</h4>
+        <pre>{{baseUrl + '/' + paste.id}}</pre>
+      </div>
+      <div vertical layout ng-show="paste.title">
+        <h4>{{paste.title}}</h4>
+      </div>
+      <div vertical layout>
+        <pre><code ng-bind-html="paste.content"></code></pre>
+      </div>
+      <div vertical layout ng-show="paste.email">
+        <p class="text-info">Pasted by {{paste.email}} on {{paste.timestamp|date:'medium'}}</p>
+      </div>
+      <div vertical layout end>
+        <div horizontal layout>
+          <paper-button class="colored" raised role"button" ng-click="resetPaste()"><core-icon icon="add"></core-icon>New</paper-button>
+          <paper-button raised role="button" ng-show="paste.isOwner" ng-click="deletePaste(paste)"><core-icon icon="delete"></core-icon>Delete</paper-button>
+        </div>
+    </div>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,17 @@
+<div>
+  <section horizontal center-justified layout>
+    <div flex role="form">
+      <paper-input floatinglabel label="Title" layout vertical flex ng-model="paste.title">
+      </paper-input>
+      <paper-input floatinglabel multiline rows="10" label="Text" layout vertical ng-model="paste.content">
+      </paper-input>
+      <div vertical layout end>
+        <paper-fab icon="add" aria-label="add" ng-click="newPaste()"></paper-fab>
+        <paper-button class="colored" raised role="button" type="submit" ng-click="newPaste()" style="overflow: visible;">
+          <core-icon icon="save" role="img"></core-icon>
+          Paste
+        </paper-button>
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,26 @@
+{
+  "name": "gaestebin",
+  "version": "0.0.0",
+  "authors": [
+    "Petr Hosek <petrhosek@gmail.com>"
+  ],
+  "description": "Paste your text",
+  "main": "index.html",
+  "license": "CC BY 3.0",
+  "homepage": "http://pastebin.appspot.com/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "core-icon": "Polymer/core-icon#~0.4.2",
+    "core-icons": "Polymer/core-icons#~0.4.2",
+    "polymer": "Polymer/polymer#~0.4.2",
+    "paper-button": "Polymer/paper-button#~0.4.2",
+    "paper-fab": "Polymer/paper-fab#~0.4.2"
+    "paper-input": "Polymer/paper-input#~0.4.2",
+  }
+}
